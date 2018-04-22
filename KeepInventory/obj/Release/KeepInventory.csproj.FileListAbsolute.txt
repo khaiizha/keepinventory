@@ -1,0 +1,5 @@
+C:\Users\Khairul Izhan\Documents\Visual Studio 2015\Projects\KeepInventory-master\KeepInventory\bin\Release\KeepInventory.dll
+C:\Users\Khairul Izhan\Documents\Visual Studio 2015\Projects\KeepInventory-master\KeepInventory\bin\Release\KeepInventory.pdb
+C:\Users\Khairul Izhan\Documents\Visual Studio 2015\Projects\KeepInventory-master\KeepInventory\obj\Release\KeepInventory.dll
+C:\Users\Khairul Izhan\Documents\Visual Studio 2015\Projects\KeepInventory-master\KeepInventory\obj\Release\KeepInventory.pdb
+C:\Users\Khairul Izhan\Documents\Visual Studio 2015\Projects\KeepInventory-master\KeepInventory\obj\Release\KeepInventory.csprojResolveAssemblyReference.cache
