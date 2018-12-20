@@ -21,7 +21,6 @@ namespace KeepInventory
     public class Main : RocketPlugin
     {
 
-        public const string LOGGER_PREFIX = "[KeepInventory]: Modified by Miw0 ";
         private System.Random rand = new System.Random();
 
         private List<UnturnedPlayer> deadAdmins = new List<UnturnedPlayer> ();
@@ -32,14 +31,14 @@ namespace KeepInventory
             UnturnedPlayerEvents.OnPlayerRevive += Give;
             UnturnedPlayerEvents.OnPlayerDeath += GetAndDrop;
 
-            Logger.Log (LOGGER_PREFIX + "Loaded KeepInventory - Modified by Miw0!");
+            Logger.Log ("Loaded KeepInventory - Modified by Miw0!");
         }
         protected override void Unload()
         {
             UnturnedPlayerEvents.OnPlayerRevive -= Give;
             UnturnedPlayerEvents.OnPlayerDeath -= GetAndDrop;
 
-            Logger.Log (LOGGER_PREFIX + "Unloaded KeepInventory!");
+            Logger.Log ("Unloaded KeepInventory!");
         }
 
         private void Give(UnturnedPlayer player, UnityEngine.Vector3 position, byte angle)
@@ -188,20 +187,43 @@ namespace KeepInventory
             {
                 byte page = Convert.ToByte(rand.Next(0, 8));
                 byte itemsCountonPage = player.Player.inventory.getItemCount(page);
-
+                byte index;
+                
                 if (itemsCountonPage > 0)
                 {
-                    byte index = Convert.ToByte(rand.Next(0, itemsCountonPage));
-                    try
+                    if (page == 1 | page == 0)
                     {
-                        byte posX = player.Player.inventory.getItem(page, index).x;
-                        byte posY = player.Player.inventory.getItem(page, index).y;
-                        player.Player.inventory.askDropItem(player.CSteamID,page,posX,posY);
-                        amount--;
+                        int decProbb = rand.Next(0, 9);
+                        if (decProbb < 2)
+                        {
+                            try
+                            {
+                                index = Convert.ToByte(rand.Next(0, itemsCountonPage));
+                                byte posX = player.Player.inventory.getItem(page, index).x;
+                                byte posY = player.Player.inventory.getItem(page, index).y;
+                                player.Player.inventory.askDropItem(player.CSteamID, page, posX, posY);
+                                amount--;
+                            }
+                            catch (Exception e)
+                            {
+                                Console.WriteLine(e);
+                            }
+                        }
                     }
-                    catch (Exception e)
+                    else
                     {
-                        Console.WriteLine(e);
+                        index = Convert.ToByte(rand.Next(0, itemsCountonPage));
+                        try
+                        {
+                            byte posX = player.Player.inventory.getItem(page, index).x;
+                            byte posY = player.Player.inventory.getItem(page, index).y;
+                            player.Player.inventory.askDropItem(player.CSteamID, page, posX, posY);
+                            amount--;
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine(e);
+                        }
                     }
                 }
             }
