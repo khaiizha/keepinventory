@@ -12,3 +12,5 @@ To make the player drop based on percentage, you must put this permission:
 
 Note that you need both .keep and .vip/.vvip/.arch if you want them to drop items based on certain percentage. Use .keep if you want them
 to save all their items
+
+Editted some code for custom use. Sorry if I'm not using the config files for that.
