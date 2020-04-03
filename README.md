@@ -19,4 +19,11 @@ So in the permission file you'll going to have both .keep and .vip
 
 * Note that you need both .keep and .vip/.vvip/.arch if you want them to drop items based on certain percentage. Use .keep ONLY if you want them to save 100% of  their items
 
+Ex: To maintain 100% item
+<permission>keepinventory.keep</permission> 
+
+Ex 2: to maintain % of item based on ranks
+<permission>keepinventory.keep</permisson>
+<permission>keepinventory.vip</permission>
+
 * Editted some code for custom use. Sorry that I'm not using the configuration files for adjustable percentage
