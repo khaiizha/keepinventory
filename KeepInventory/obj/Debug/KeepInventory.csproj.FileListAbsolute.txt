@@ -3,3 +3,23 @@ c:\users\home\documents\visual studio 2012\Projects\KeepInventory\KeepInventory\
 c:\users\home\documents\visual studio 2012\Projects\KeepInventory\KeepInventory\bin\Debug\KeepInventory.pdb
 c:\users\home\documents\visual studio 2012\Projects\KeepInventory\KeepInventory\obj\Debug\KeepInventory.dll
 c:\users\home\documents\visual studio 2012\Projects\KeepInventory\KeepInventory\obj\Debug\KeepInventory.pdb
+C:\Users\Khairul Izham\Documents\Visual Studio 2017\Projects\KeepInventory-master\KeepInventory\obj\Debug\KeepInventory.csproj.CoreCompileInputs.cache
+C:\Users\Khairul Izham\Documents\Visual Studio 2017\Projects\KeepInventory-master\KeepInventory\bin\Debug\KeepInventory.dll
+C:\Users\Khairul Izham\Documents\Visual Studio 2017\Projects\KeepInventory-master\KeepInventory\bin\Debug\KeepInventory.pdb
+C:\Users\Khairul Izham\Documents\Visual Studio 2017\Projects\KeepInventory-master\KeepInventory\obj\Debug\KeepInventory.dll
+C:\Users\Khairul Izham\Documents\Visual Studio 2017\Projects\KeepInventory-master\KeepInventory\obj\Debug\KeepInventory.pdb
+C:\Users\Khairul Izham\Documents\Visual Studio 2017\Projects\KeepInventory-master\KeepInventory\obj\Debug\KeepInventory.csprojAssemblyReference.cache
+C:\Users\Miw0\Documents\Visual Studio 2019\Projects\KeepInventory-master\KeepInventory\obj\Debug\KeepInventory.csprojAssemblyReference.cache
+C:\Users\Miw0\Documents\Visual Studio 2019\Projects\KeepInventory-master\KeepInventory\obj\Debug\KeepInventory.csproj.CoreCompileInputs.cache
+C:\Users\Miw0\Documents\Visual Studio 2019\Projects\KeepInventory-master\KeepInventory\obj\Debug\KeepInventory.dll
+C:\Users\Miw0\Documents\Visual Studio 2019\Projects\KeepInventory-master\KeepInventory\obj\Debug\KeepInventory.pdb
+C:\Users\Miw0\Documents\Visual Studio 2019\Projects\KeepInventory-master\KeepInventory\bin\Debug\KeepInventory.dll
+C:\Users\Miw0\Documents\Visual Studio 2019\Projects\KeepInventory-master\KeepInventory\bin\Debug\KeepInventory.pdb
+C:\Users\Miw0\Documents\Visual Studio 2019\Projects\KeepInventory-master\KeepInventory\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\Miw0\Documents\Visual Studio 2019\Projects\KeepInventory-master\KeepInventory\bin\Debug\Assembly-CSharp.dll
+C:\Users\Miw0\Documents\Visual Studio 2019\Projects\KeepInventory-master\KeepInventory\bin\Debug\Rocket.API.dll
+C:\Users\Miw0\Documents\Visual Studio 2019\Projects\KeepInventory-master\KeepInventory\bin\Debug\Rocket.Core.dll
+C:\Users\Miw0\Documents\Visual Studio 2019\Projects\KeepInventory-master\KeepInventory\bin\Debug\Rocket.Unturned.dll
+C:\Users\Miw0\Documents\Visual Studio 2019\Projects\KeepInventory-master\KeepInventory\bin\Debug\UnityEngine.CoreModule.dll
+C:\Users\Miw0\Documents\Visual Studio 2019\Projects\KeepInventory-master\KeepInventory\bin\Debug\UnityEngine.dll
+C:\Users\Miw0\Documents\Visual Studio 2019\Projects\KeepInventory-master\KeepInventory\obj\Debug\KeepInventory.csproj.CopyComplete

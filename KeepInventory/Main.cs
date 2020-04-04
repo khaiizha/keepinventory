@@ -22,12 +22,13 @@ namespace KeepInventory
     {
 
         private System.Random rand = new System.Random();
-
+        
         private List<UnturnedPlayer> deadAdmins = new List<UnturnedPlayer> ();
         private Dictionary<UnturnedPlayer, List<Item>> adminItems = new Dictionary<UnturnedPlayer, List<Item>> ();
 
         protected override void Load()
         {
+            Console.ForegroundColor = ConsoleColor.Cyan;
             UnturnedPlayerEvents.OnPlayerRevive += Give;
             UnturnedPlayerEvents.OnPlayerDeath += GetAndDrop;
 
@@ -164,21 +165,21 @@ namespace KeepInventory
             int finalPercentage = 0;
             if (player.HasPermission("keepinventory.arch"))
             {
-                finalPercentage = 90;
+                finalPercentage = 50;
             }
             else if (player.HasPermission("keepinventory.vvip"))
             {
-                finalPercentage = 80;
+                finalPercentage = 40;
             }
             else if (player.HasPermission("keepinventory.vip"))
             {
-                finalPercentage = 50;
+                finalPercentage = 30;
             }
             else
             {
                 finalPercentage = 100;
             }
-            return Convert.ToInt32(allItemamount - Math.Floor(allItemamount * (finalPercentage / (double)100)));
+            return Convert.ToInt32(allItemamount - System.Math.Floor(allItemamount * (finalPercentage / (double)100)));
         }
 
         private void dropRandomItems(UnturnedPlayer player, int amount)
@@ -191,14 +192,14 @@ namespace KeepInventory
                 
                 if (itemsCountonPage > 0)
                 {
-                    if (page == 1 | page == 0)
+                    index = Convert.ToByte(rand.Next(0, itemsCountonPage));
+                    if (page == 1 | page == 0) //10% chances to drop primary and secondary equipped weapon
                     {
                         int decProbb = rand.Next(0, 9);
-                        if (decProbb < 2)
+                        if (decProbb < 1)
                         {
                             try
                             {
-                                index = Convert.ToByte(rand.Next(0, itemsCountonPage));
                                 byte posX = player.Player.inventory.getItem(page, index).x;
                                 byte posY = player.Player.inventory.getItem(page, index).y;
                                 player.Player.inventory.askDropItem(player.CSteamID, page, posX, posY);
@@ -212,7 +213,6 @@ namespace KeepInventory
                     }
                     else
                     {
-                        index = Convert.ToByte(rand.Next(0, itemsCountonPage));
                         try
                         {
                             byte posX = player.Player.inventory.getItem(page, index).x;
